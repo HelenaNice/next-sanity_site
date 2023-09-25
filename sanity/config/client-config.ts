@@ -1,9 +1,8 @@
-// sanity\config\client-config.ts
 const config = {
-    // скопируем код из утилит const client = createClient
-     projectId:"vk9uefqk",
-        dataset: "production", 
-        apiVersion: "2023-09-23",
-
+  projectId: "vk9uefqk",
+  // projectId: "txd29ab2",
+  dataset: "production",
+  apiVersion: "2023-09-23",
 }
-export default config
+
+export default config;

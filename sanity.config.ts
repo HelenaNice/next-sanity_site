@@ -1,19 +1,16 @@
-import { defineConfig } from "sanity";
-import {visionTool} from '@sanity/vision'
-import { deskTool } from "sanity/desk";
-
-import schemas from "./sanity/schemas";
-
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
+import schemas from "./sanity/schemas"
 
 const config = defineConfig({
-    projectId:"vk9uefqk",
-    dataset: "production", 
-    title: "My Personal Website", 
-    apiVersion: "2023-09-23",
-    basePath: "/admin",
-    plugins: [deskTool(), visionTool()],
-    // refactoring code
-    schema: { types: schemas },
-});
+  // projectId: "txd29ab2",
+  projectId: "vk9uefqk",
+  dataset: "production",
+  title: "My Personal Website",
+  apiVersion: "2023-09-23",
+  basePath: "/admin",
+  plugins: [deskTool()],
+  schema: { types: schemas }
+})
 
-export default config;
+export default config
